@@ -9,7 +9,6 @@ import MovieView from './Components/MovieView';
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
 
-// TMDB API Key = 9e5e7271e4c3358295bdfdf15427362a
 
 function App() {
 
