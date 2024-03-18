@@ -29,10 +29,6 @@ const Home = () => {
                             Designed with user experience in mind, MovieSearch offers a sleek and intuitive interface that adapts seamlessly to any device. Whether you're browsing on your desktop, tablet, or smartphone, you can enjoy the same seamless experience and access our vast database of movies anytime, anywhere.
 
                             Ready to dive into the world of movies? Start your search now and discover a treasure trove of cinematic wonders with MovieSearch. Whether you're exploring timeless classics, trending blockbusters, or hidden gems, MovieSearch is your ultimate companion for all things movies.
-
-
-                            Start Exploring
-                            <a href={AboutView}>Get Started Today</a>
                         </p>
                     </div>
                 </div>
