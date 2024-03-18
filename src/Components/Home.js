@@ -1,4 +1,4 @@
-import AboutView from './AboutView';
+
 import Hero from './Hero';
 const Home = () => {
     return (
