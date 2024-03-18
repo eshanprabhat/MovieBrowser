@@ -3,13 +3,13 @@ import Hero from './Hero';
 const Home = () => {
     return (
         <>
-            <Hero text="Welcome to Home Page!" />
+            <Hero text="Welcome to MovieBrowser!" />
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8 offset-lg-2 my-5">
                         <p className="lead">
                             <h1>
-                                Welcome to MovieSearch!
+                                Use a US based VPN for functioning!
                             </h1>
 
                             Find Your Favorite Movies Instantly
