@@ -38,7 +38,7 @@ const MovieView = () => {
                                     {movieDetails.overview}
                                 </p>
                                 <strong>Budget : Rs.{movieDetails.budget}</strong>
-                                <div>Homepage</div>
+                                {/* <div>Homepage : {movieDetails.homepage}</div> */}
                             </div>
                         </div>
                     </div>
