@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
-import Navbar from './Components/Navbar';
+import NavbarNew from './Components/NavbarNew';
 import AboutView from './Components/AboutView'
 import Home from './Components/Home';
 import SearchView from './Components/SearchView';
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div>
-      <Navbar searchText={searchText} setSearchText={setSearchText} />
+      <NavbarNew searchText={searchText} setSearchText={setSearchText} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutView />} />

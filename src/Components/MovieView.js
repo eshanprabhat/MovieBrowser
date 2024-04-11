@@ -1,5 +1,5 @@
 import Hero from './Hero';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 const MovieView = () => {
     const { id } = useParams()
@@ -25,6 +25,34 @@ const MovieView = () => {
         if (movieDetails) {
             const posterPath = `https://image.tmdb.org/t/p/original${movieDetails.poster_path}`
             const backdropPath = `https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`
+            let homePage = "none"
+            if (movieDetails.homepage) {
+                homePage = `${movieDetails.homepage}`
+            }
+            else {
+                homePage = "No Link Available....."
+            }
+            let Budget = "none"
+            if (movieDetails.homepage) {
+                Budget = `Rs.${movieDetails.budget}`
+            }
+            else {
+                Budget = "Not Available"
+            }
+            let Revenue = "none"
+            if (movieDetails.revenue) {
+                Revenue = `Rs.${movieDetails.revenue}`
+            }
+            else {
+                Revenue = "Not Available"
+            }
+            let Tagline = "none"
+            if (movieDetails.homepage) {
+                Tagline = `${movieDetails.tagline}`
+            }
+            else {
+                Tagline = "No Tagline....."
+            }
             return (
                 <>
                     <Hero text={movieDetails.original_title} backdrop={backdropPath} />
@@ -37,8 +65,16 @@ const MovieView = () => {
                                 <p>
                                     {movieDetails.overview}
                                 </p>
-                                <strong>Budget : Rs.{movieDetails.budget}</strong>
-                                {/* <div>Homepage : {movieDetails.homepage}</div> */}
+                                <strong>Budget : {Budget}</strong>
+                                <div><b>Homepage</b> : <Link to={homePage} target="_blank">{homePage}</Link></div>
+                                <div><b>Release Date</b>: {movieDetails.release_date}</div>
+                                <div><b>Revenue</b>: {Revenue}</div>
+                                <div><b>Runtime</b>: {movieDetails.runtime} minutes</div>
+                                <div><b>Rating</b>: {movieDetails.vote_average}</div>
+                                <div><b>Status</b>: {movieDetails.status}</div>
+                                <p>
+                                    <b>Tagline</b>: {Tagline}
+                                </p>
                             </div>
                         </div>
                     </div>
